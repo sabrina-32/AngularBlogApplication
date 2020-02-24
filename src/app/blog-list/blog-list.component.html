@@ -1,3 +1,5 @@
 
-<app-blog-post-title [post] = "blogPosts[0]"></app-blog-post-title>
+<app-blog-post-title 
+*ngFor = "let post of blogPosts"
+[post] = "post"></app-blog-post-title>
 

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { BlogPost } from '../blog-post';
 
 @Component({
   selector: 'app-blog-post-title',
@@ -7,8 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BlogPostTitleComponent implements OnInit {
 
-  @Input() title: string;
-  @Input() summary:  string;
+  @Input() post: BlogPost;
 
   constructor() { }
 

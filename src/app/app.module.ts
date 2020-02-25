@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlogPostTitleComponent } from './blog-post-title/blog-post-title.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
+import { TruncatePipe } from './truncate.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogPostTitleComponent,
-    BlogListComponent
+    BlogListComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,

@@ -8,15 +8,61 @@ import { BlogPost } from '../blog-post';
 })
 export class BlogListComponent implements OnInit {
 
-  blogPosts:  BlogPost[] =[];
+  blogPosts:  BlogPost[][];
 
-  constructor() { }
+  constructor() { 
+
+
+  }
 
   ngOnInit() {
 
-    this.blogPosts.push(new BlogPost('Blog Post 1', 'Summary 1'));
-    this.blogPosts.push(new BlogPost('Blog Post 2', 'Summary 2'));
-    this.blogPosts.push(new BlogPost('Blog Post 3', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quidem libero praesentium ipsa molestiae autem alias excepturi aperiam odit fuga et necessitatibus repellat minus est itaque architecto, possimus perferendis tempore?'));
+    this.blogPosts=
+    [
+      [
+        {title: 'Post 1',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      {title: 'Post 2',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      
+      {title: 'Post 3',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      
+      {title: 'Post 4',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      
+      ],
+      [
+        {title: 'Post 5',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      {title: 'Post 6',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      
+      {title: 'Post 7',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      
+      {title: 'Post 8',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      
+      ],
+      [
+        {title: 'Post 9',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      {title: 'Post 10',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      
+      {title: 'Post 11',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      
+      {title: 'Post 12',
+      summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis consequuntur illum neque aliquid necessitatibus recusandae assumenda! Delectus, quia nihil! Facilis, quibusdam quisquam ipsa inventore natus dolorem sit repellat voluptatibus." },
+      
+      ]
+
+    ]
+
+
+   
   }
 
 }
